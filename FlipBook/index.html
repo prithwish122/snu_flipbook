@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
 </head>
 <body>
     <!-- Previous Button -->
     <button id="prev-btn">
-        <i class="fas fa-arrow-circle-left"></i>
+        <!-- <img class="prev" src="../FlipBook/img/arrowNextpage.png" alt="prev"> -->
     </button>
 
 
@@ -42,8 +43,8 @@
                 <div class="page2">
                     <div id="f2" class="front-content">
                         <div class="form">
-                            <h3>Pick the name of three books that are irreplacable for you</h3><br>
-                            <input id="booknames" class="textbox" type="text" placeholder="your ans">
+                            <h3 class="question">1. Pick the name of three books that are irreplacable for you.</h3><br>
+                            <input id="booknames" class="underlined" type="text" placeholder="Your answer">
                         </div>
                     </div>
                 </div>
@@ -54,8 +55,8 @@
                 <div class="page3">
                     <div id="b2" class="back-content">
                         <div class="form">
-                            <h3>If you have to choose 3 authors,that left the most impact on you ,who would they be?</h3><br>
-                            <input id="authornames" class="textbox" type="text" placeholder="your ans">
+                            <h3 class="question">2. If you have to choose 3 authors,that left the most impact on you ,who would they be?</h3><br>
+                            <input id="authornames" class="underlined" type="text" placeholder="Your answer">
                         </div>
                     </div>
                 </div>
@@ -68,9 +69,9 @@
                 <div class="page4">
                     <div id="f3" class="front-content">
                         <div class="form">
-                            <h3>Select three topics that intrigue your mind the most</h3><br>
-                            <input id="genre" class="textbox" type="text" placeholder="your ans">
-                            <button id="submitall">SUBMIT</button>
+                            <h3 class="question">3. Select three topics that intrigue your mind the most.</h3><br>
+                            <input id="genre" class="underlined" type="text" placeholder="Your answer">
+                            <button id="submitall">Submit</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +87,7 @@
 
     <!-- Next Button -->
     <button id="next-btn">
-        <img class="nxt" src="./img/next_button.svg" alt=" Next">
+        <img class="nxt" src="./img/arrowNextpage.png" alt=" Next">
         <!-- <i class="fas fa-arrow-circle-right"></i> -->
     </button>
 </body>

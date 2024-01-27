@@ -8,12 +8,12 @@ const paper2 = document.querySelector("#p2");
 const paper3 = document.querySelector("#p3");
 const paper4 = document.querySelector("#p4");
 // Event Listener
-prevBtn.addEventListener("onClick", goPrevPage);
+prevBtn.addEventListener("click", goPrevPage);
 nextBtn.addEventListener("click", goNextPage);
 
 // Business Logic
 let currentLocation = 1;
-let numOfPapers = 4;
+let numOfPapers = 3;
 let maxLocation = numOfPapers + 1;
 
 function openBook() {
@@ -68,6 +68,7 @@ function goPrevPage() {
             case 3:
                 paper2.classList.remove("flipped");
                 paper2.style.zIndex = 2;
+                paper3.style.zIndex = 2;
                 break;
             case 4:
                 openBook();
@@ -92,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const genre = document.getElementById('genre').value;
 
       // Send data to the server
-      console.log(bookname, authorname, genre, "hello pruuuuth experiment")
+      console.log(bookname, authorname, genre,);
       fetch('/submit', {
         method: 'POST',
         headers: {

@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
     /* background-color: powderblue; */
     background-image: url('./img/Bookbg.png');
 
@@ -22,6 +22,7 @@ body {
     width: 350px;
     height: 500px;
     transition: transform 0.5s;
+
 }
 
 .paper {
@@ -50,6 +51,7 @@ body {
 .front {
     z-index: 1;
     backface-visibility: hidden;
+
     /* border-left: 3px solid powderblue; */
 }
 
@@ -62,8 +64,8 @@ body {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content:center; 
+    align-items:center; 
 }
 
 .back-content {
@@ -78,11 +80,14 @@ body {
 
 /* Controller Buttons */
 button {
+    /* position: relative;
+    right :50px; */
     border: none;
     background-color: transparent;
     cursor: pointer;
     margin: 10px;
     transition: transform 0.5s;
+    padding: 20px;
 }
 
 button:focus {
@@ -128,19 +133,19 @@ button:hover i {
     position: relative;
     width: 375px;
     height: 530px;
-    top: 5px;
+    top: 8px;
     left: 5px;
     transform-origin: left;
     transition: transform 0.5s;
     border-radius: 10px;
 }
 
-.page1{
+/* .page1{
 
     position: absolute;
     width: 100%;
-    height: 510px;
-    top: 0;
+    height: 530px;
+    top: 5px;
     left: 0;
     transform-origin: left;
     transition: transform 0.5s;
@@ -149,12 +154,15 @@ button:hover i {
     background-size: cover; 
     background-position: center;
 
-} 
+}  */
 
 .form{
     position: relative;
-    align-items: top;
+    align-items: first baseline;
     padding: 20px;
+    bottom: 120px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* .hi{
@@ -177,47 +185,50 @@ button:hover i {
 
 
       .page2{
-        /* background-color:bisque; */
         position: relative;
         width: 100%;
-        height: 500px ;
-        top: 0;
+        height: 520px ;
+        top: 4px;
         left: 0;
-        bottom: 20;
+        bottom: 0;
         transform-origin: left;
         transition: transform 0.5s;
         border-radius: 10px;
-        background-image: url('./img/RIGHTpg.png'); 
+        background-image: url('./img/RIGHTpg\(new\).png'); 
         background-size: cover; 
         background-position: center;
+        padding-bottom: 45px;
       }
 
       .page3{
-        /* background-color:bisque; */
         position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
+        height: 520px;
+        top: 4px;
         left: 0;
+        padding: 20px;
         transform-origin: left;
         transition: transform 0.5s;
         border-radius: 10px;
-        background-image: url('./img/LEFTpg.png'); 
+        background-image: url('./img/RIGHTpg\(new\).png'); 
         background-size: cover; 
         background-position: center;
+        padding-bottom: 40px;
+        padding-left: 10px;
       }
 
       .page4{
         /* background-color:bisque;  */
          position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
+        height: 520px;
+        top: 4px;
         left: 0;
+        /* right: 10px; */
         transform-origin: left;
         transition: transform 0.5s;
         border-radius: 10px;
-        background-image: url('./img/RIGHTpg.png'); 
+        background-image: url('./img/RIGHTpg\(new\).png'); 
         background-size: cover; 
         background-position: center;
       }
@@ -236,10 +247,56 @@ button:hover i {
       }
 
 
-      .textbox{
-        text-align: center;
+      .question{
+        font-family: Caveat;
+        font-size: x-large;
+        padding: 10px;
+        color: #0e0e0e;
+
+
+       /* url('path/to/james-fajardo.woff') format('woff'); */
+      }
+
+
+      .underlined{
+        border: none;
+        border-bottom: 1px solid #632d06; /* Change color as needed */
+        outline: none; /* Remove the default input focus outline */
+        text-align: left;
         text-decoration: solid;
         width: 300px;
         height: 40px;
-        ;
+        background-color: rgba(255, 255, 255, 0); /* Adjust the alpha value as needed */
+        /* border: 1px solid #000; Add a border for better visibility */
+        padding: 5px;
+        font-family: Caveat;
+        font-size: larger;
+        font-weight: bold;
+        color: #0e0e0e;
+      }
+
+      #submitall{
+        position: relative;
+        color: #0e0e0e;
+        font-family: Caveat;
+        font-weight:bolder;
+        font-size: larger;
+        align-items: center;
+        justify-content: center;
+        left: 110px;
+        top: 30px;
+        border: 1px #632d06;
+        /* text-decoration :underline; */
+        /* border-radius: 30px; */
+        border-bottom: 1px solid #632d06;
+        padding: 2px;
+
+      }
+
+      .prev{
+        
+            width: 50px;
+            height: 50px;
+            color: gray;
+        
       }
